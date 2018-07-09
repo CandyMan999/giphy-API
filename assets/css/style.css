@@ -1,0 +1,57 @@
+.pic {
+    padding: 5px;
+    display: inline-block;
+}
+
+#display {
+    margin: 0 auto;
+    display: none;
+    
+}
+
+img {
+
+    width: 200px;
+    height: 200px;
+
+}
+#button-view{
+    float: right;
+    margin: 0 auto;
+}
+
+.btn {
+    margin: 2px;
+}
+
+.btn:last-child {
+    margin-right: 10px;
+}
+
+#searchBar {
+    margin: 0 auto;
+}
+#add-gif {
+    background-color: lightblue;
+    margin-top: 10px;
+    font-size: 35px;
+    color: magenta;
+}
+h1 {
+    color:lightblue;
+}
+#click {
+    margin: 0 auto;
+}
+
+#gif-input {
+    border: 2px solid magenta;
+}
+
+p {
+    font-size: 9px;
+}
+
+img:hover{
+    cursor: -webkit-grab;
+}
