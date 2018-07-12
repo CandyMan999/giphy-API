@@ -36,6 +36,7 @@ img {
     margin-top: 10px;
     font-size: 35px;
     color: magenta;
+    margin-bottom: 10px;
 }
 h1 {
     color:lightblue;
@@ -54,4 +55,14 @@ p {
 
 img:hover{
     cursor: -webkit-grab;
+}
+
+.icon {
+    background-color: magenta;
+    color: white;
+    width: fit-content;
+
+}
+.icon:hover {
+    cursor: pointer;
 }
