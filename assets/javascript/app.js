@@ -8,6 +8,10 @@ var count = 0;
 
 $("#add-gif").on("click", function(event) {
     event.preventDefault();
+    if ($("#gif-input").val() == "") {
+        alert("You need to type something in the search bar first genius!");
+    } else {
+
  
      var userAdded =  $("#gif-input").val().trim();
       console.log(userAdded);
@@ -17,8 +21,9 @@ $("#add-gif").on("click", function(event) {
       wordList.push(userAdded);
       console.log(wordList);
       renderButtons();
+    }
  });
-            //you can use this es6 function arrow unless you are using the $this feature
+            //you can use the es6 function arrow unless you are using the $this feature
 
             //extract out the info in a funtion so it can build out the image
     $("#favorite").on('click',() => {
@@ -53,7 +58,7 @@ $("#add-gif").on("click", function(event) {
             });
 
         } else {
-            alert("you have not picked a favorite!")
+            alert("You have not picked any favorite Giphys yet!")
         }
 
         $("img").on('click', function(){
@@ -102,7 +107,7 @@ function renderButtons(){
         $("#display").css("display","unset");
         userInput = ($(this).text());
         console.log(userInput);
-        var apiKey = "RZuVrcxRsnYkZyjfAORpDZe91c1ocg0v"
+        var apiKey = key
         var searchURL = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${userInput}&limit=12&offset=0&rating=R&lang=en`;
 
         $.ajax({
@@ -191,18 +196,6 @@ renderButtons();
 
 
 
-//     renderButtons();
 
-
-
-// });
-
-// renderButtons();
- 
-// function getGifs () {
-//     //this is my query url with my API key
-//     var userInput = $('#user-input').val();
-    
-// $('#userBtn').on('click', getGifs);
 
 
